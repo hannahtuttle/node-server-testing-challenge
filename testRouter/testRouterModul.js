@@ -6,9 +6,9 @@ module.exports = {
 }
 
 function add (item) {
-    return null
+    return db('test').insert(item, 'id')
 }
 
 function remove (id) {
-    return null
+    return db('test').where('id', id).delete();
 }
